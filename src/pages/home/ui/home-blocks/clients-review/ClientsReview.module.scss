@@ -1,0 +1,11 @@
+@import '/src/index.scss';
+
+.section__container {
+    display: flex;
+    flex-direction: column;
+
+    padding: 8rem;
+    & .section__title {
+        @include section-title;
+    }
+}

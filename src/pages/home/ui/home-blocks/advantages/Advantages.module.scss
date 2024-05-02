@@ -1,0 +1,56 @@
+@import '/src/index.scss';
+
+.section__container {
+    // display: flex;
+    // flex-direction: column;
+    // gap: 5rem;
+
+    padding: 2.5rem;
+    background-color: $secondary-color;
+
+    .section__wrapper {
+        max-width: $content-width;
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    
+        & .section__header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            & .section__title {
+                @include section-title;
+                color: $primary-white;
+                text-align: center;
+            }
+            & .header__btn {
+                padding-inline: 2rem;
+            }
+        }
+    
+        & .icons__container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+    
+            & .icon__wrapper {
+                max-width: 10rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                justify-content: center;
+                align-items: center;
+                color: $primary-white;
+            }
+    
+            & .icon__text {
+                text-align: center;
+            }
+        }
+    }
+
+
+}

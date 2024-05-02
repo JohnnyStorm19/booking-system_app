@@ -1,0 +1,45 @@
+@import '/src/index.scss';
+
+.btn__dark, .btn__yellow {
+    @include my-btn;
+}
+
+.btn__dark {
+    color: $primary-white;
+    border: 1px solid $primary-white;
+    background-color: transparent;
+
+
+    &:hover {
+        background-color: $btn-hover;
+        color: $primary-color;
+    }
+    &:active {
+        background-color: $primary-white;
+        color: $primary-color;
+    }
+}
+
+.btn__yellow {
+    color: $primary-color;
+    background-color: $secondary-color;
+
+    &:hover, &:active {
+        box-shadow: 0px 4px 4px 0px #00000040;
+    }
+    &:active {
+        background-color: transparent;
+        border: 1px solid $secondary-color;
+        color: $secondary-color;
+    }
+}
+
+.uppercased {
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.disabled {
+    background-color: $disabled-color;
+    color: #fff;
+    cursor: not-allowed;
+}

@@ -1,0 +1,52 @@
+@import '/src/index.scss';
+
+.ticket_form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    padding: 2rem;
+    background-color: $backdrop-color;
+
+    input::placeholder {
+        color: #E5E5E5;
+    }
+    input {
+        border: none;
+        border-radius: $border-radius;
+    }
+
+    .ticket_form__title {
+        @include widget-title;
+        font-weight: 300; 
+    }
+
+    .cities__container {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .dates__container {
+        display: flex;
+        justify-content: space-between;
+    }    
+}
+::-webkit-inner-spin-button { display: none; }
+::-webkit-calendar-picker-indicator {   opacity: .3; }
+
+// ::-webkit-datetime-edit { padding: 1em; }
+// ::-webkit-datetime-edit-fields-wrapper { background: silver; }
+// ::-webkit-datetime-edit-text { color: #E5E5E5; }
+// ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-year-field  { color: #E5E5E5; }
+// ::-webkit-datetime-edit-day-field { color: green; }
+// ::-webkit-datetime-edit-year-field { color: purple; }
+// input::-webkit-datetime-edit {
+//     color: transparent; 
+// }
+
+// input:focus::-webkit-datetime-edit {
+//    color: rgba(255, 255, 255, .46) !important; 
+// }
+

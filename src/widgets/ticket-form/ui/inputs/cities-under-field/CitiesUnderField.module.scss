@@ -1,0 +1,24 @@
+@import 'src/index.scss';
+
+.searched_cities {
+    position: absolute;
+    top: 102%;
+    width: 100%;
+    z-index: 1;
+
+    max-height: 10rem;
+    overflow-y: auto;
+    border-radius: $border-radius;
+    background-color: $primary-white;
+
+    & .city {
+        padding: .5rem;
+        cursor: pointer;
+    }
+
+    & .city:hover {
+        background-color: $btn-hover;
+        color: $primary-white;
+        border-radius: $border-radius;
+    }
+}

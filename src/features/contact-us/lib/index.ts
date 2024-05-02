@@ -1,0 +1,1 @@
+export { getIconStyle } from "./getIconStyle";

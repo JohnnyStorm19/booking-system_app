@@ -1,0 +1,35 @@
+@import '/src/index.scss'; 
+
+.hero__container {
+    min-height: 100vh;
+    position: relative;
+    height: 100vh;
+    background-image: url('../../../../../shared/assets/img/hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    & .ticket_form__wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 50%;
+
+        & .hero__title {
+            max-width: 40%;
+            font-size: 4rem;
+            font-weight: 100;
+            color: #fff;
+        }
+    }
+
+    & .hero__divider {
+        position: absolute;
+        bottom: 0;
+
+        width: 100%;
+        height: .5rem;
+
+        background-color: $secondary-color;
+    }
+}

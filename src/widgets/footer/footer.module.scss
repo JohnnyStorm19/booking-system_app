@@ -1,0 +1,20 @@
+@import '/src/index.scss';
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem;
+    background-color: $primary-color;
+
+    & h5 {
+        @include widget-title 
+    }
+
+    & .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+}

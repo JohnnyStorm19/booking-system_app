@@ -1,0 +1,27 @@
+@import '/src/index.scss';
+
+.field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    & .input {
+        padding: .5rem;
+    }
+    & .input:user-invalid {
+        border: 1px solid $error-bg;
+    }
+    & .error {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        line-height: 1rem;
+        min-height: 2rem;
+        color: $error-bg;
+    }
+    & .disabled {
+        cursor: not-allowed;
+        background-color: $disabled-color;
+    }
+}

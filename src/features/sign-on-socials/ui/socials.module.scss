@@ -1,0 +1,38 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+    .icons {
+        display: flex;
+        gap: 1rem;
+
+        .icon__wrapper {
+            flex: 1 1 auto;
+        }
+    
+        .icon {
+            display: block;
+            max-width: 50px;
+            height: 30px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .icon__youtube {
+            background-image: url('/src/shared/assets/icons/sign-on_youtube.svg');
+        }
+        .icon__in {
+            background-image: url('/src/shared/assets/icons/sign-on_in.svg');
+        }
+        .icon__google {
+            background-image: url('/src/shared/assets/icons/sign-on_google.svg');
+        }
+        .icon__f {
+            background-image: url('/src/shared/assets/icons/sign-on_f.svg');
+        }
+        .icon__twitter {
+            background-image: url('/src/shared/assets/icons/sign-on_twitter.svg');
+        }
+    }
+}
+

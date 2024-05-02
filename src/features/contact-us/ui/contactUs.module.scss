@@ -1,0 +1,39 @@
+@import '/src/index.scss';
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    & .contact {
+        display: flex;
+        align-items: center;
+        gap: 2.25rem;
+
+        .icon {
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .icon__phone {
+            background-image: url('/src/shared/assets/icons/contact-us_phone.svg');
+        }
+        .icon__mail {
+            background-image: url('/src/shared/assets/icons/contact-us_mail.svg');
+        }
+        .icon__skype {
+            background-image: url('/src/shared/assets/icons/contact-us_skype.svg');
+        }
+        .icon__geo {
+            background-image: url('/src/shared/assets/icons/contact-us_geo.svg');
+        }
+    }
+}

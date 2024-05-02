@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic-ext');
+
+// width
+$content-width: 1100px;
+
+// colors
+$primary-color: #2D2B2F;
+$secondary-color: #FFA800;
+$disabled-color: #928F94;
+$btn-hover: #FFCA62;
+$primary-white: #FFFFFF;
+$error-bg: #FF3D00;
+$backdrop-color: #00000099;
+
+// borders
+$border-radius: 5px;
+
+// titles
+$section-title: 2.25rem;
+
+//font
+$widget-title: 1.875rem;
+
+//mixins
+@mixin my-btn {
+  padding: .8rem;
+  border-radius: $border-radius;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: all .2s ease-in;
+}
+@mixin section-title {
+  font-size: $section-title;
+  text-transform: uppercase;
+}
+@mixin widget-title {
+  font-size: $widget-title;
+  color: $primary-white;
+}
+
+// scroll
+html {
+  scroll-behavior: smooth;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+//reseting styles
+:root {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  a {
+    text-decoration: none;
+    color: $primary-white;
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+}
+
+
+/* body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+} */
