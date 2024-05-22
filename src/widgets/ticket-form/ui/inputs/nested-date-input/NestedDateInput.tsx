@@ -1,5 +1,3 @@
-import style from './NestedDateInput.module.scss';
-
 import { Controller, useFormContext } from "react-hook-form";
 import { Field } from "../../../../../shared/ui";
 import { TDatesFieldName } from '../../../types';

@@ -1,0 +1,8 @@
+@import '/src/index.scss';
+
+.breadcrumbs {
+    display: flex;
+
+    background-color: $primary-color;
+    color: $primary-white;
+}

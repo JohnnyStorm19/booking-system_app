@@ -1,0 +1,1 @@
+export { getTrains } from "./trains";

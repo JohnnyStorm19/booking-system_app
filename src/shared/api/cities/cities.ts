@@ -1,10 +1,11 @@
-import { apiInstance } from "../base"
-import { TCitiesResponse } from "./types"
-
-const BASE_URL = (query: string) => `cities?name=${query}`
+import { apiInstance } from "../base";
+import { TCitiesResponse } from "./types";
 
 export const getCities = (query: string): Promise<TCitiesResponse> => {
-    const URL = BASE_URL(query);
-    console.log('URL: ', URL);
-    return apiInstance.get(`${URL}`)
-}
+  const params = new URLSearchParams({ name: query }).toString();
+
+  const URL = `/cities?${params}`;
+  console.log("URL: ", URL);
+  
+  return apiInstance.get(`${URL}`);
+};

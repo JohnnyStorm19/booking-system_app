@@ -1,0 +1,21 @@
+@import '/src/index.scss';
+
+.tickets_page {
+    display: flex;
+    flex-direction: column;
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        min-height: calc(100vh / 2);
+
+        background-image: url('/src/shared/assets/img/tickets-bg.jpg');
+        background-position: top center;
+        
+    }
+    .main {
+        flex: 1 1 auto;
+        background-color: $tickets-page-bg;
+    }
+}

@@ -12,6 +12,7 @@ $btn-hover: #FFCA62;
 $primary-white: #FFFFFF;
 $error-bg: #FF3D00;
 $backdrop-color: #00000099;
+$tickets-page-bg: #F7F5F9;
 
 // borders
 $border-radius: 5px;
@@ -50,38 +51,36 @@ html {
 }
 
 //reseting styles
-:root {
-  *, *::before, *::after {
-    box-sizing: border-box;
-  }
-  * {
-    margin: 0;
-  }
-  body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  input, button, textarea, select {
-    font: inherit;
-  }
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  a {
-    text-decoration: none;
-    color: $primary-white;
-  }
-  ul {
-    padding: 0;
-  }
-  li {
-    list-style: none;
-  }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+a {
+  text-decoration: none;
+  color: $primary-white;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
 }
 
 

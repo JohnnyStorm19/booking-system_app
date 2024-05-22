@@ -1,0 +1,1 @@
+export { SeatsInfo } from "./SeatsInfo";

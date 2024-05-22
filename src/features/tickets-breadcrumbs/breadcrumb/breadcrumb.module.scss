@@ -1,0 +1,64 @@
+@import '/src/index.scss';
+
+$chevron_border: 1.7rem;
+
+@mixin triangle {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+	border-top: $chevron_border solid transparent;
+	border-bottom: $chevron_border solid transparent;
+}
+@mixin triangle-primary-after {
+    @include triangle; 
+    left: 100%;
+	border-left: calc($chevron_border / 2) solid #fff;
+}
+@mixin triangle-primary-before {
+    @include triangle;
+    left: calc(100% - 1px);
+    border-left: calc($chevron_border / 2) solid $primary-color;
+    z-index: 2;
+}
+
+.breadcrumb {
+    width: calc(100% / 4);
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    padding-inline: 2.5rem;
+
+    & .order {
+        padding: 0 .5rem;
+        border: 2px solid $primary-white;
+        border-radius: 50%;
+
+        font-weight: bold;
+    }
+    & p {
+        padding: 1rem 1.375rem;
+    }
+}
+
+.breadcrumb:not(:last-child)::after {
+    @include triangle-primary-after;
+}
+
+.breadcrumb:not(:last-child)::before {
+    @include triangle-primary-before;
+}
+
+.active {
+    background-color: $secondary-color;
+}
+
+.active:not(:last-child)::after {
+    @include triangle-primary-after;
+}
+
+.active:not(:last-child)::before {
+    @include triangle-primary-before;
+    border-left: calc($chevron_border / 2) solid $secondary-color;
+}

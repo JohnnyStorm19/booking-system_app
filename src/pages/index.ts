@@ -1,2 +1,3 @@
-export { HomePage } from "./home/index";
-export { Layout } from "./layout/index";
+export { HomePage } from "./home";
+export { Layout } from "./layout";
+export { SeatsPage } from "./seats";
